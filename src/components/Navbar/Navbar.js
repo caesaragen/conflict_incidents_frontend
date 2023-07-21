@@ -7,12 +7,12 @@ const Navbar = () => {
 
     const [navbar, setNavbar] = useState(false);
     return (
-        <nav className="w-full bg-white shadow">
+        <nav className="w-full bg-gray-100 dark:bg-gray-900 shadow">
             <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
                         {/* TO DO: FIND IMAGE FOR LOGO */}
-                        <h1 className='font-bold'>Human Wildlife Conflict Incidents</h1>
+                        <h1 className='font-bold dark:text-gray-100'>Human Wildlife Conflict Incidents</h1>
                             {/* <ApplicationLogo/>                  */}
                         <div className="md:hidden">
                             <button
@@ -74,20 +74,20 @@ const Navbar = () => {
                         {user ? (
                             <Link
                                 href="/dashboard"
-                                className="ml-4 text-sm text-gray-700 underline">
+                                className="ml-4 text-sm dark:text-gray-100 text-gray-700 underline">
                                 Dashboard
                             </Link>
                         ) : (
                             <>
                                 <Link
                                     href="/login"
-                                    className="text-sm text-gray-700 underline">
+                                    className="text-sm dark:text-gray-100 text-gray-700 underline">
                                     Login
                                 </Link>
 
                                 <Link
                                     href="/register"
-                                    className="ml-4 text-sm text-gray-700 underline">
+                                    className="ml-4 text-sm dark:text-gray-100 text-gray-700 underline">
                                     Register
                                 </Link>
                             </>
