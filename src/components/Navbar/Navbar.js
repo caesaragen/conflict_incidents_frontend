@@ -11,9 +11,10 @@ const Navbar = () => {
             <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
-                        {/* TO DO: FIND IMAGE FOR LOGO */}
+                        <div className='flex items-center justify-between gap-4'>
+                        <ApplicationLogo/>
                         <h1 className='font-bold dark:text-gray-100'>Human Wildlife Conflict Incidents</h1>
-                            {/* <ApplicationLogo/>                  */}
+                       </div>
                         <div className="md:hidden">
                             <button
                                 className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
